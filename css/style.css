@@ -1,0 +1,156 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body {
+	width:100%;
+	max-width: 400px;
+	height:100dvh;
+	background:#1b1c1e;
+	color:#fff;
+	font-size:16px;
+	font-family: Arial;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+header {
+	font-size:1.5rem;
+	display:flex;
+	align-items: center;
+	gap: 15px;
+	padding: 15px;
+	border-bottom: 1px solid #696969;
+}
+#waktu {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+main {
+  flex: 1;
+  padding: 15px;
+  overflow: auto;
+}
+.todo-list {
+  background: #444;
+  list-style: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.todo-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #696969;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo {
+  flex: 1;
+  outline: none;
+  caret-color: auto;
+}
+.todo:focus {
+  background: white;
+  color: black;
+}
+.cta {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: .9rem;
+  /*background: red;*/
+}
+footer {
+  padding: 15px;
+  width: 100%;
+  border-top: 1px solid #696969;
+}
+.input-box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#input-todo {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+  outline: none;
+  background: white;
+  border-radius: 20px;
+}
+.input-box button {
+  font-size: 1.5rem;
+  padding: 8px 10px;
+  /*width: 36px;*/
+  background: #099fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100dvh;
+  background: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  transform: translateX(100%);
+  transition: transform ease;
+}
+#konfir {
+  background: white;
+  color: black;
+  width: 75%;
+  height: 25%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#konfir p {
+  height: 75%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns {
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+.btns button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  color: #099fff;
+  cursor: pointer;
+}
+.btns #true {
+  color: red;
+}
+.show {
+  transform: translateX(0);
+}
