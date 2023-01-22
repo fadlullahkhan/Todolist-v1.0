@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000"/>
+	<link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <span id="waktu"></span>
+      <span class="fas fa-search btn"></span>
+      <span class="fas fa-list btn"></span>
+    </header>
+    <main>
+      <ul class="todo-list">
+        <!--Tempat untuk todolist-->
+      </ul>
+      <div class="modal">
+        <div id="konfir">
+          <p>Apakah anda yakin?</p>
+          <div class="btns">
+            <button type="submit" id="false">Batal</button>
+            <button type="submit" id="true">Hapus</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <form class="input-box">
+      	<input type="text" placeholder="Ketik sesuatu..." id="input-todo" required maxlength="50">
+      	<button><i class="fas fa-plus"></i></button>
+      </form>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
