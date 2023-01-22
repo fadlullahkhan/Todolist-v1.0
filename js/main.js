@@ -1,5 +1,5 @@
 /*
-  Todolist v1.0
+  Todolist v0.5
 */
 
 const form = document.querySelector(".input-box");
@@ -33,7 +33,7 @@ const generateID = () => {
 const addTodo = () => {
   const inputTodo = document.getElementById("input-todo");
   const genID = generateID();
-  const newTodo = `<li id="${genID}"><span class="todo" maxlength="50">${inputTodo.value}</span><span class="cta"><i class="fa-solid fa-pen edit"></i><i class="fa-solid fa-trash del" onclick="deleteTodo(this)"></i></span></li>`;
+  const newTodo = `<li id="${genID}"><span class="todo" maxlength="50">${inputTodo.value}</span><span class="cta"><i class="fas fa-pen edit"></i><i class="fas fa-trash del" onclick="deleteTodo(this)"></i></span></li>`;
   
   const listTodo = document.querySelector(".todo-list");
   listTodo.insertAdjacentHTML("beforeend", newTodo);
